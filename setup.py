@@ -1,3 +1,4 @@
+from matplotlib.pyplot import install_repl_displayhook
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
@@ -26,4 +27,9 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    install_requires=[
+        "numpy",
+        "tqdm",
+        'logging'
+        ]
 )
