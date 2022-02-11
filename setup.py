@@ -1,4 +1,4 @@
-from matplotlib.pyplot import install_repl_displayhook
+
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
